@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="d-flex justify-content-start">
+      <h4>Seleccione su Fondo de Salud</h4>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="mb-3">
+              <label for="salud" class="form-label">Fondo de Salud</label>
+              <select class="form-control" name="fondosalud" id="fondosalud" [(ngModel)]="fondosalud.fondosalud">
+                  <option value="0">-- Seleccione</option>
+                  <option value="1">ISAPRE</option>
+                  <option value="2">FONASA D</option>
+                  <option value="3">FONASA C</option>
+                  <option value="4">FONASA B</option>
+                  <option value="2">FONASA A</option>
+
+              </select>
+          </div>
+          <div class="mb-3">
+              <label for="prevision" class="form-label">Porcentaje</label>
+              <select class="form-control" name="porcentajefs" id="porcentajefs" [(ngModel)]="fondosalud.porcentajefs">
+                  <option value="0">-- Seleccione</option>
+                  <option value="1">7%</option>
+                  <option value="2">Otro</option>
+              </select>
+          </div>
+          <button class="btn btn-success" (click)="save()"><i class="fas fa-save"></i> Guardar</button>
+      </div>
+  </div>
+</div>

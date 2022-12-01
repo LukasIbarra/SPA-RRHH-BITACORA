@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="d-flex justify-content-start">
+      <h4>Seleccione su Cargo</h4>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="mb-3">
+              <label for="salud" class="form-label">Cargo</label>
+              <select class="form-control" name="cargo" id="cargo" [(ngModel)]="cargos.cargo">
+                  <option value="0">-- Seleccione</option>
+                  <option value="1">Jefatura</option>
+                  <option value="2">Gerente</option>
+                  <option value="3">Secretaria</option>
+                  <option value="4">Obrero</option>
+              </select>
+          </div>
+          <div class="mb-3">
+              <label for="prevision" class="form-label">Sueldo Base</label>
+              <select class="form-control" name="sueldob" id="sueldob" [(ngModel)]="cargos.sueldo_base">
+                  <option value="0">-- Seleccione</option>
+                  <option value="1">$1.500.000</option>
+                  <option value="2">$850.000</option>
+                  <option value="3">$650.000</option>
+                  <option value="4">$450.000</option>
+              </select>
+          </div>
+          <button class="btn btn-success" (click)="save()"><i class="fas fa-save"></i> Guardar</button>
+      </div>
+  </div>
+</div>
