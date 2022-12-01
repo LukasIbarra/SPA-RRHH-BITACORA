@@ -15,6 +15,7 @@ import { FondoPensionEditComponent } from "./fondo-pension/fondo-pension-edit/fo
 import { FondoSaludAddComponent } from "./fondo-salud/fondo-salud-add/fondo-salud-add.component";
 import { FondoSaludAdminComponent } from "./fondo-salud/fondo-salud-admin/fondo-salud-admin.component";
 import { FondoSaludEditComponent } from "./fondo-salud/fondo-salud-edit/fondo-salud-edit.component";
+import { LiquidacionAdminComponent } from "./liquidacion/liquidacion-admin/liquidacion-admin.component";
 
 const rutas:Routes = [
     { path: '', component: DashboardComponent},
@@ -29,7 +30,8 @@ const rutas:Routes = [
     { path: 'fondo-pension/edit', component: FondoPensionEditComponent},
     { path: 'fondo-salud', component: FondoSaludAdminComponent},
     { path: 'fondo-salud/add', component: FondoSaludAddComponent},
-    { path: 'fondo-salud/edit', component: FondoSaludEditComponent}
+    { path: 'fondo-salud/edit', component: FondoSaludEditComponent},
+    { path: 'liquidacion', component: LiquidacionAdminComponent}
   ]
 
 @NgModule({
@@ -46,7 +48,8 @@ const rutas:Routes = [
       FondoPensionEditComponent,
       FondoSaludAddComponent,
       FondoSaludAdminComponent,
-      FondoSaludEditComponent
+      FondoSaludEditComponent,
+      LiquidacionAdminComponent
     ],
     imports: [
         CommonModule,
